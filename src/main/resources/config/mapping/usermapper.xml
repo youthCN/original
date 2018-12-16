@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.original.dao.UserDao">
+    <!--<resultMap id="BaseResultMap" type="com.david.model.User">-->
+        <!--<id column="id" property="id" jdbcType="VARCHAR"/>-->
+        <!--<result column="name" property="name" jdbcType="VARCHAR"/>-->
+        <!--<result column="term_validity" property="termValidity" jdbcType="TIMESTAMP"/>-->
+        <!--<result column="user_type" property="userType" jdbcType="VARCHAR"/>-->
+        <!--<result column="status" property="status" jdbcType="INTEGER"/>-->
+        <!--<result column="qq_num" property="qqNum" jdbcType="VARCHAR"/>-->
+        <!--<result column="account" property="account" jdbcType="VARCHAR"/>-->
+        <!--<result column="pwd" property="pwd" jdbcType="VARCHAR"/>-->
+        <!--<result column="line_code" property="lineCode" jdbcType="VARCHAR"/>-->
+    <!--</resultMap>-->
+    <!--<sql id="Base_Column_List">-->
+        <!--id, name, term_validity, user_type, status, qq_num, account, pwd, line_code-->
+    <!--</sql>-->
+    <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String">-->
+        <!--select-->
+        <!--<include refid="Base_Column_List"/>-->
+        <!--from u_user-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</select>-->
+    <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.String">-->
+        <!--delete from u_user-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</delete>-->
+    <!--<insert id="insert" parameterType="com.david.model.User">-->
+        <!--insert into u_user (id, name, term_validity,-->
+        <!--user_type, status, qq_num,-->
+        <!--account, pwd, line_code-->
+        <!--)-->
+        <!--values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{termValidity,jdbcType=TIMESTAMP},-->
+        <!--#{userType,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{qqNum,jdbcType=VARCHAR},-->
+        <!--#{account,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{lineCode,jdbcType=VARCHAR}-->
+        <!--)-->
+    <!--</insert>-->
+    <!--<insert id="insertSelective" parameterType="com.david.model.User">-->
+        <!--insert into u_user-->
+        <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+            <!--<if test="id != null">-->
+                <!--id,-->
+            <!--</if>-->
+            <!--<if test="name != null">-->
+                <!--name,-->
+            <!--</if>-->
+            <!--<if test="termValidity != null">-->
+                <!--term_validity,-->
+            <!--</if>-->
+            <!--<if test="userType != null">-->
+                <!--user_type,-->
+            <!--</if>-->
+            <!--<if test="status != null">-->
+                <!--status,-->
+            <!--</if>-->
+            <!--<if test="qqNum != null">-->
+                <!--qq_num,-->
+            <!--</if>-->
+            <!--<if test="account != null">-->
+                <!--account,-->
+            <!--</if>-->
+            <!--<if test="pwd != null">-->
+                <!--pwd,-->
+            <!--</if>-->
+            <!--<if test="lineCode != null">-->
+                <!--line_code,-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+            <!--<if test="id != null">-->
+                <!--#{id,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="name != null">-->
+                <!--#{name,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="termValidity != null">-->
+                <!--#{termValidity,jdbcType=TIMESTAMP},-->
+            <!--</if>-->
+            <!--<if test="userType != null">-->
+                <!--#{userType,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="status != null">-->
+                <!--#{status,jdbcType=INTEGER},-->
+            <!--</if>-->
+            <!--<if test="qqNum != null">-->
+                <!--#{qqNum,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="account != null">-->
+                <!--#{account,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="pwd != null">-->
+                <!--#{pwd,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="lineCode != null">-->
+                <!--#{lineCode,jdbcType=VARCHAR},-->
+            <!--</if>-->
+        <!--</trim>-->
+    <!--</insert>-->
+    <!--<update id="updateByPrimaryKeySelective" parameterType="com.david.model.User">-->
+        <!--update u_user-->
+        <!--<set>-->
+            <!--<if test="name != null">-->
+                <!--name = #{name,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="termValidity != null">-->
+                <!--term_validity = #{termValidity,jdbcType=TIMESTAMP},-->
+            <!--</if>-->
+            <!--<if test="userType != null">-->
+                <!--user_type = #{userType,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="status != null">-->
+                <!--status = #{status,jdbcType=INTEGER},-->
+            <!--</if>-->
+            <!--<if test="qqNum != null">-->
+                <!--qq_num = #{qqNum,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="account != null">-->
+                <!--account = #{account,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="pwd != null">-->
+                <!--pwd = #{pwd,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="lineCode != null">-->
+                <!--line_code = #{lineCode,jdbcType=VARCHAR},-->
+            <!--</if>-->
+        <!--</set>-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</update>-->
+    <!--<update id="updateByPrimaryKey" parameterType="com.david.model.User">-->
+        <!--update u_user-->
+        <!--set name = #{name,jdbcType=VARCHAR},-->
+        <!--term_validity = #{termValidity,jdbcType=TIMESTAMP},-->
+        <!--user_type = #{userType,jdbcType=VARCHAR},-->
+        <!--status = #{status,jdbcType=INTEGER},-->
+        <!--qq_num = #{qqNum,jdbcType=VARCHAR},-->
+        <!--account = #{account,jdbcType=VARCHAR},-->
+        <!--pwd = #{pwd,jdbcType=VARCHAR},-->
+        <!--line_code = #{lineCode,jdbcType=VARCHAR}-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</update>-->
+    <!--<select id="getUserByParm" parameterType="map" resultType="map">-->
+        <!--SELECT-->
+        <!--<include refid="Base_Column_List"/>-->
+        <!--from u_user s where 1=1-->
+        <!--<if test="qqNum != null">-->
+            <!--and s.qq_num=#{qqNum}-->
+        <!--</if>-->
+        <!--<if test="account != null">-->
+            <!--and s.account=#{account}-->
+        <!--</if>-->
+        <!--<if test="pwd != null">-->
+            <!--and s.pwd=#{pwd}-->
+        <!--</if>-->
+        <!--<if test="status != null">-->
+            <!--and s.status=#{status}-->
+        <!--</if>-->
+        <!--<if test="qqandaccount != null">-->
+            <!--and( s.qq_num=#{qqandaccount} or s.account=#{qqandaccount})-->
+        <!--</if>-->
+    <!--</select>-->
+    <!--<select id="loginUser" parameterType="map" resultType="com.david.model.User">-->
+        <!--SELECT-->
+        <!--<include refid="Base_Column_List"/>-->
+        <!--from u_user s where 1=1-->
+        <!--<if test="qqNum != null">-->
+            <!--and s.qq_num=#{qqNum}-->
+        <!--</if>-->
+        <!--<if test="account != null">-->
+            <!--and s.account=#{account}-->
+        <!--</if>-->
+        <!--<if test="pwd != null">-->
+            <!--and s.pwd=#{pwd}-->
+        <!--</if>-->
+        <!--<if test="status != null">-->
+            <!--and s.status=#{status}-->
+        <!--</if>-->
+        <!--<if test="qqandaccount != null">-->
+            <!--and( s.qq_num=#{qqandaccount} or s.account=#{qqandaccount})-->
+        <!--</if>-->
+    <!--</select>-->
+</mapper>
